@@ -49,7 +49,7 @@ public class YouTubeManager extends SimpleViewManager<YouTubeView> {
             "stopVideo",
             COMMAND_STOP_VIDEO,
             "pauseVideo",
-            COMMAND_PAUSE_VIDEO,
+            COMMAND_PAUSE_VIDEO
         );
     }
 
