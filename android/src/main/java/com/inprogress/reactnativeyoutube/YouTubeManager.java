@@ -40,7 +40,13 @@ public class YouTubeManager extends SimpleViewManager<YouTubeView> {
             "previousVideo",
             COMMAND_PREVIOUS_VIDEO,
             "playVideoAt",
-            COMMAND_PLAY_VIDEO_AT
+            COMMAND_PLAY_VIDEO_AT,
+            "playVideo",
+            COMMAND_PLAY_VIDEO,
+            "stopVideo",
+            COMMAND_STOP_VIDEO,
+            "pauseVideo",
+            COMMAND_PAUSE_VIDEO,
         );
     }
 
