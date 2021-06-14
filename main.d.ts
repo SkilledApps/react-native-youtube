@@ -16,7 +16,7 @@ export interface YouTubeProps {
   origin?: string;
   onError?: (event: any) => void;
   onReady?: (event: any) => void;
-  onChangeState?: () => void;
+  onChangeState?: (event: any) => void;
   onChangeQuality?: () => void;
   onChangeFullscreen?: (event: any) => void;
   onProgress?: (event: any) => void;
@@ -32,6 +32,9 @@ declare class YouTube extends React.Component<YouTubeProps> {
   getCurrentTime(): Promise<number>;
   getDuration(): Promise<number>;
   reloadIframe(): void;
+  pauseVideo(): void;
+  playVideo(): void;
+  stopVideo(): void;
 }
 
 export declare const YouTubeStandaloneIOS: {
