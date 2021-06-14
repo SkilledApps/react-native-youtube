@@ -19,6 +19,9 @@ public class YouTubeManager extends SimpleViewManager<YouTubeView> {
     private static final int COMMAND_NEXT_VIDEO = 2;
     private static final int COMMAND_PREVIOUS_VIDEO = 3;
     private static final int COMMAND_PLAY_VIDEO_AT = 4;
+    private static final int COMMAND_PLAY_VIDEO = 5;
+    private static final int COMMAND_STOP_VIDEO = 6;
+    private static final int COMMAND_PAUSE_VIDEO = 7;
 
     @Override
     public String getName() {
@@ -69,6 +72,18 @@ public class YouTubeManager extends SimpleViewManager<YouTubeView> {
             }
             case COMMAND_PLAY_VIDEO_AT: {
                 view.playVideoAt(args.getInt(0));
+                return;
+            }
+            case COMMAND_PLAY_VIDEO: {
+                view.playVideo();
+                return;
+            }
+            case COMMAND_STOP_VIDEO: {
+                view.stopVideo();
+                return;
+            }
+            case COMMAND_PAUSE_VIDEO: {
+                view.pauseVideo();
                 return;
             }
             default:
